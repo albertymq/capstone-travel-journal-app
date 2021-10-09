@@ -15,18 +15,20 @@
             <div class="toCityHolder">
                 <label for="city">Trip To:</label>
                 <input type="text" id="city" placeholder="Enter Location eg.Sydney">
+                <label for="zip">ZipCode: </label>
+                <input type="text" id="zip" placeholder="Enter Location ZipCode eg.2001">
             </div>
             <div class="departDateHolder">
                 <label for="departDate">Departing:</label>
                 <input type="date" id="departDate" placeholder="11/10/2021">
             </div>
             <div class="lengthHolder">
-                <label for="length">Stay there for:</label>
+                <label for="length">Stay there for (days):</label>
                 <input type="number" id="length" placeholder="14">
             </div>
             <button id="save" type="submit">Save Trip</button>
         </section>
-        <section class="journal">
+        <section class="journal" id="journalHolder">
             <div class="tripInfo">
                 <div id="destination">My Trip to Sydney</div>
                 <div id="departing">Departing: 11/10/2021</div>
@@ -35,11 +37,11 @@
             <div id="dueDays">Tirp to Sydney is <u>66</u> days away</div>
             <img id="cityImage">
             <div id="cityInfo">City Info: Sydney is the Capital of Australia, it's a very famous city.</div>
-            <div class="weatherHolder">Weather Info
+            <div class="weatherHolder">Weather at your arrival:
+                <div class="weather" id="description">Description: Overcast clouds</div>
                 <div class="weather" id="high">High: 99c</div>
                 <div class="weather" id="low">Low: 0c</div>
                 <div class="weather" id="Wind">Wind Speed: 6.4 Direction: NorthEast</div>
-                <div class="weather" id="description">Overcast clouds</div>
             </div>
             <button id="remove">Remove Trip</button>
 

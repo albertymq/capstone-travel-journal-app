@@ -33,10 +33,26 @@ app.get("/test", function (req, res) {
   res.send("testing");
 });
 
-//getApiKey for request
+//ApiKeys Enviorment Variables
+let ApiKeys = {
+  Pixabay: process.env.Pixabay_Api_Key,
+  GeoNames: process.env.GeoNames_UserName,
+  Weatherbit: process.env.weatherbit_Api_Key,
+};
+//getApiKeys request
+app.get("/getApiKeys", function (req, res) {
+  res.send(ApiKeys);
+});
 
 //postData into projectData
 let projectData = {};
+
+app.post("/postInfo", function(req,res){
+  console.log(req.body);
+})
+
+
+
 app.get("/all", function (req, res) {
   res.send(projectData);
 });
