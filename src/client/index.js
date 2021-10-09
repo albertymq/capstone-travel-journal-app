@@ -1,7 +1,7 @@
 //import js files
 import { saveAction } from "./js/saveAction";
 import { removeAction } from "./js/removeAction";
-import { getApiKey } from "./js/app";
+import { getApiKey } from "./js/getApiKey";
 import "axios";
 
 //import Styles
@@ -13,7 +13,7 @@ import "./styles/main.scss";
 
 //import images
 import defaultImg from "./media/Default.jpg";
-let cityImage = document.getElementsByClassName("cityImage");
+let cityImage = document.getElementById("cityImage");
 cityImage.src = defaultImg;
 
 

@@ -2,7 +2,7 @@ var path = require("path");
 const express = require("express");
 
 const app = express();
-app.use(express.static('dist'));
+app.use(express.static("dist"));
 
 const bodyParser = require("body-parser");
 /* Middleware*/
@@ -37,7 +37,6 @@ app.get("/test", function (req, res) {
 
 //postData into projectData
 let projectData = {};
-
 app.get("/all", function (req, res) {
   res.send(projectData);
 });
