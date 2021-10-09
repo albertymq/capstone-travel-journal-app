@@ -32,6 +32,7 @@ module.exports = {
     clean: true, // Clean the output directory before emit.
     libraryTarget: "var",
     library: "Client",
+    iife: true,
   },
   plugins: [
     new HtmlWebPackPlugin({
