@@ -27,12 +27,12 @@ main {
   grid-column: 1/2;
   grid-row: 5/6;
   border-radius: 5px;
-  border:0px;
+  border: 0px;
   height: 4vh;
   width: 15vw;
   margin-top: 2vh;
   font-size: 2vh;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bolder;
 }
 
@@ -43,7 +43,7 @@ main {
 .tripInfo {
   grid-column: 2/3;
   grid-row: 1/2;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 3vh;
   font-weight: bolder;
 }
@@ -70,7 +70,54 @@ main {
   font-size: 1.5vh;
 }
 
-.weather{
+.weather {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5vh;
+}
+
+@media (max-width: 1100px) and (min-width: 750px) {
+  .journal {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+  }
+
+  #remove {
+    font-size: 1.5vh;
+  }
+}
+
+@media (max-width: 749px) {
+  .journal {
+    grid-template-columns: 1fr;
+  }
+
+  #cityImage {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-width: 70vw;
+  }
+  .tripInfo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #dueDays {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  #cityInfo {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .weatherHolder {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  #remove {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    font-size: 1.5vh;
+  }
 }
