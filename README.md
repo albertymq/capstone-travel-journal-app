@@ -14,3 +14,9 @@ weather forcast of the departing date will be fetched from weatherbit.
 1. Add end date and display length of trip.
 2. Allow the user to remove the trip.
 3. Weather forecast is Dynamicly displayed based on how many days left before departure
+
+***Jest Test Special Requirements***
+I have a code block used for loading images and adding eventlisteners in index.js
+which will cause test import failure
+
+so please black out that code block when reviewing my jest test results

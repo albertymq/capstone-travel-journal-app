@@ -21,16 +21,12 @@ import defaultImg from "./media/Default.jpg";
 
 /*** ***/
 //When running jest test, please block out this code block to avoid test import failure
-function firstload() {
-  //import images
-  let cityImage = document.getElementById("cityImage");
-  cityImage.src = defaultImg;
-
-  //add event listener to Save Button
-  document.getElementById("save").addEventListener("click", saveAction);
-  document.getElementById("remove").addEventListener("click", removeAction);
-}
-firstload()
+//import images
+let cityImage = document.getElementById("cityImage");
+cityImage.src = defaultImg;
+//add event listener to Save Button
+document.getElementById("save").addEventListener("click", saveAction);
+document.getElementById("remove").addEventListener("click", removeAction);
 /*** ***/
 
 export {
